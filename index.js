@@ -6,7 +6,7 @@ const app = express();
 const jsonData = JSON.parse(fs.readFileSync('items.json', 'utf-8'));
 
 // API endpoint to retrieve JSON data by multiple IDs
-app.get('/api/items', (req, res) => {
+app.get('/api/items/', (req, res) => {
     const ids = req.query.ids.split(',').map(id => parseInt(id));
     const data = ids.map(id => jsonData[id]);
     res.json(data.filter(item => item)); // Filter out undefined items
