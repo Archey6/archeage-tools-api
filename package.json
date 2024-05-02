@@ -3,8 +3,6 @@
     "express": "^4.19.2"
   },  
   "scripts": {
-  "start": "node src/server.js",
-  "build": "node",
-  "serve": "node dist/server.js"
+  "start": "node server.js"
   }
 }
