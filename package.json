@@ -4,6 +4,7 @@
   },  
   "scripts": {
   "start": "node src/server.js",
-  "build": "node"
+  "build": "node",
+  "serve": "node dist/server.js"
   }
 }
